@@ -1,0 +1,9 @@
+{
+  "name": "tasmil-finance-monorepo",
+  "private": true,
+  "scripts": {
+    "dev:client": "pnpm --filter ai-chatbot dev",
+    "dev:server": "pnpm --filter tasmil-finance-server start:dev",
+    "dev": "pnpm run dev:client & pnpm run dev:server"
+  }
+}
