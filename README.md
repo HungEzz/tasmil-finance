@@ -196,30 +196,21 @@ Tasmil Finance is built with a focus on security, low latency, and rate-limiting
 
 ---
 
-## Deployment
+## My Contribution
 
-### Docker Deployment
-The monorepo uses a multi-stage Docker build config. The first stage installs development dependencies and compiles TypeScript into Javascript, while the production stage runs a clean container with only production packages.
+This repository represents the features and components that I personally developed after the Aptos Vietnam Hackathon 2025.
 
-### Production Considerations
-1. **Symmetric Cryptography**: Ensure `PASSWORD_ENCRYPT` is a strong, 32-character key to secure wallet private keys.
-2. **PM2 Clustering**: For non-Docker deployments, use `pnpm run pm2:start:prod` to scale NestJS across multiple CPU cores with automatic memory monitoring.
-3. **Database Security**: Keep Supabase RLS (Row Level Security) enabled and ensure your database role keys are stored securely.
+My work focused on:
 
----
+- Building a NestJS backend that aggregates market and portfolio data from third-party APIs.
+- Designing REST APIs consumed by the frontend dashboard.
+- Implementing Redis caching for market data retrieval.
+- Developing dashboard pages and data visualizations using Next.js and Recharts.
+- Integrating Aptos Wallet Adapter for wallet connectivity.
+- Containerizing the application using Docker for local development and deployment.
+- Writing project documentation and deployment guides.
 
-## Team & Contribution
-
-This repository was designed and engineered as a showcase of a production-grade Web3 full-stack project.
-
-### My Role
-As the **Senior Full-Stack Engineer and Architect** for Tasmil Finance, I led:
-* The development of the NestJS backend and its FMP rate-limiting queue.
-* The Next.js 15 UI, Recharts charts, and Next.js middleware routing guards.
-* The database schemas, Postgres RPC secret vault, and AES symmetric encryption layers.
-* Multi-stage Docker containerization and PM2 ecosystem configurations.
-
----
+The original hackathon submission was developed collaboratively by a team of 4 members and remains private. This repository is a personal continuation created for learning, experimentation, and technical exploration.
 
 ## Future Improvements
 
